@@ -181,9 +181,9 @@ body {
   width: 100%;
 }
 body {
-  background-color: #666;
+  background-color: #eaeaea;
   color: #000;
-  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-family: 'Fjalla One', sans-serif;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -192,6 +192,60 @@ body {
   height: 100%;
   width: 100%;
   position: relative;
+}
+.forest-button {
+  background-color: #9ec4c2;
+}
+.royal-button {
+  background-color: #cbd1e2;
+}
+.forest .window {
+  fill: #cdc9c4;
+}
+.forest .trim1 {
+  fill: #fff;
+}
+.forest .trim2 {
+  fill: #e7e4dc;
+}
+.forest .main1 {
+  fill: #9ec4c2;
+}
+.forest .main2 {
+  fill: #23727a;
+}
+.forest .shadow {
+  fill: #194b4c;
+}
+.forest .accent1 {
+  fill: #96acc1;
+}
+.forest .accent2 {
+  fill: #b19a5b;
+}
+.royal .window {
+  fill: #cdc9c4;
+}
+.royal .trim1 {
+  fill: #fff;
+}
+.royal .trim2 {
+  fill: #e6e3db;
+}
+.royal .main1 {
+  fill: #cbd1e2;
+}
+.royal .main2 {
+  fill: #8090b2;
+}
+.royal .shadow {
+  fill: #384966;
+}
+.royal .accent1 {
+  fill: #682b2b;
+}
+.royal .accent2 {
+  fill: #682b2b;
 }
 
 .index-component {
@@ -212,77 +266,41 @@ body {
   height: 100%;
   width: 100%;
 }
-.index-component .forest .window {
-  fill: #cdc9c4;
-}
-.index-component .forest .trim1 {
-  fill: #fff;
-}
-.index-component .forest .trim2 {
-  fill: #e7e4dc;
-}
-.index-component .forest .main1 {
-  fill: #9ec4c2;
-}
-.index-component .forest .main2 {
-  fill: #23727a;
-}
-.index-component .forest .shadow {
-  fill: #194b4c;
-}
-.index-component .forest .accent1 {
-  fill: #96acc1;
-}
-.index-component .forest .accent2 {
-  fill: #b19a5b;
-}
-.index-component .royal .window {
-  fill: #cdc9c4;
-}
-.index-component .royal .trim1 {
-  fill: #fff;
-}
-.index-component .royal .trim2 {
-  fill: #e6e3db;
-}
-.index-component .royal .main1 {
-  fill: #cbd1e2;
-}
-.index-component .royal .main2 {
-  fill: #8090b2;
-}
-.index-component .royal .shadow {
-  fill: #384966;
-}
-.index-component .royal .accent1 {
-  fill: #682b2b;
-}
-.index-component .royal .accent2 {
-  fill: #682b2b;
-}
 
 .navbar-component {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 1000;
-  height: 50px;
-  width: 100%;
-  background-color: #333;
   color: #fff;
 }
 .navbar-component .mode-button {
+  vertical-align: top;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  height: 25px;
+  width: 25px;
   outline: none;
-  background-color: #333;
   border: none;
-  border-right: 1px solid #fff;
-  padding: 10px;
-  height: 100%;
+}
+.navbar-component .mode-button:hover {
+  height: 50px !important;
+  width: 50px !important;
+}
+.navbar-component:hover .mode-button {
+  height: 37.5px;
+  width: 37.5px;
 }
 .navbar-component ~ * {
-  padding-top: 50px;
-  max-height: -webkit-calc(100% - 50px);
-  max-height: calc(100% - 50px);
+  padding-top: 25px;
+  max-height: -webkit-calc(100% - 25px);
+  max-height: calc(100% - 25px);
 }
 
 /*# sourceMappingURL=index.css.map */
