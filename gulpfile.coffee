@@ -116,9 +116,8 @@ gulp.task 'server', (cb) ->
   server = http.createServer ecstatic root: rootFolder
   server.listen port, cb
 
-
 gulp.task 'deploy', ->
-  gulp.src './public'
+  gulp.src './public/**/*'
     .pipe deploy()
 
 gulp.task 'watch', ->
