@@ -1,0 +1,288 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: #666;
+  color: #000;
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.application-component {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.index-component {
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+}
+.index-component .house {
+  height: 100%;
+  width: 100%;
+}
+.index-component .forest .window {
+  fill: #cdc9c4;
+}
+.index-component .forest .trim1 {
+  fill: #fff;
+}
+.index-component .forest .trim2 {
+  fill: #e7e4dc;
+}
+.index-component .forest .main1 {
+  fill: #9ec4c2;
+}
+.index-component .forest .main2 {
+  fill: #23727a;
+}
+.index-component .forest .shadow {
+  fill: #194b4c;
+}
+.index-component .forest .accent1 {
+  fill: #96acc1;
+}
+.index-component .forest .accent2 {
+  fill: #b19a5b;
+}
+.index-component .royal .window {
+  fill: #cdc9c4;
+}
+.index-component .royal .trim1 {
+  fill: #fff;
+}
+.index-component .royal .trim2 {
+  fill: #e6e3db;
+}
+.index-component .royal .main1 {
+  fill: #cbd1e2;
+}
+.index-component .royal .main2 {
+  fill: #8090b2;
+}
+.index-component .royal .shadow {
+  fill: #384966;
+}
+.index-component .royal .accent1 {
+  fill: #682b2b;
+}
+.index-component .royal .accent2 {
+  fill: #682b2b;
+}
+
+.navbar-component {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 50px;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+}
+.navbar-component .mode-button {
+  outline: none;
+  background-color: #333;
+  border: none;
+  border-right: 1px solid #fff;
+  padding: 10px;
+  height: 100%;
+}
+.navbar-component ~ * {
+  padding-top: 50px;
+  max-height: -webkit-calc(100% - 50px);
+  max-height: calc(100% - 50px);
+}
+
+/*# sourceMappingURL=index.css.map */
