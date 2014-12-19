@@ -1,0 +1,29 @@
+@require 'nib'
+@require 'jeet'
+
+navColor = #333
+textColor = #fff
+navHeight = 50px
+
+.navbar-component
+  fixed: top left
+  z-index: 1000
+  height: navHeight
+  width: 100%
+  
+  background-color: navColor
+  color: textColor
+
+  .mode-button
+    outline: none
+    background-color: navColor
+    border: none
+    border-right: 1px solid textColor
+    padding: 10px
+    height: 100%
+  
+.navbar-component ~ *
+  // TODO: ay
+  padding-top: navHeight
+  max-height: "calc(100% - %s)" % (navHeight)
+  
