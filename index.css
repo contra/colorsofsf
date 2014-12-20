@@ -193,6 +193,24 @@ body {
   width: 100%;
   position: relative;
 }
+.application-component .title {
+  z-index: 200;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px;
+  font-family: serif;
+  font-size: 3rem;
+  width: 150px;
+}
+.application-component .title:after {
+  display: block;
+  margin-top: 10px;
+  background-color: #000;
+  height: 5px;
+  width: 100px;
+  content: '';
+}
 .forest-button {
   background-color: #9ec4c2;
 }
@@ -279,16 +297,9 @@ body {
 
 .navbar-component {
   position: absolute;
-  -webkit-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  position: absolute;
+  top: 0;
   left: 0;
+  padding-top: 180px;
   z-index: 1000;
   color: #fff;
 }
@@ -299,23 +310,23 @@ body {
   vertical-align: top;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
   outline: none;
   border: none;
 }
 .navbar-component .mode-button:hover {
-  height: 52px !important;
-  width: 52px !important;
+  height: 72px !important;
+  width: 72px !important;
 }
 .navbar-component:hover .mode-button {
-  height: 44px;
-  width: 44px;
+  height: 66px;
+  width: 66px;
 }
 .navbar-component ~ * {
-  padding-top: 40px;
-  max-height: -webkit-calc(100% - 40px);
-  max-height: calc(100% - 40px);
+  padding-left: 72px;
+  max-width: -webkit-calc(100% - 72px);
+  max-width: calc(100% - 72px);
 }
 
 /*# sourceMappingURL=index.css.map */
