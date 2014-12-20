@@ -18,15 +18,18 @@ Application = fission.view
     clickables = modes.map (mode) =>
       return DOM.button
         key: mode
-        className: 'mode-button'
+        className: "mode-button #{mode}-button"
         onClick: @setMode.bind @, mode
-      , mode
+      #, mode
 
+    txt = DOM.h1
+      className: 'title'
+    , 'Colors of SF'
     nav = Navbar null, clickables
     house = Index mode: @state.mode
 
     return DOM.div
       className: 'application-component'
-    , nav, house
+    , txt, nav, house
 
 module.exports = Application

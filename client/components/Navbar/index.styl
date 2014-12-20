@@ -3,27 +3,35 @@
 
 navColor = #333
 textColor = #fff
-navHeight = 50px
+navHeight = 60px
 
 .navbar-component
-  fixed: top left
+  absolute: top left
+  padding-top: 180px
   z-index: 1000
-  height: navHeight
-  width: 100%
-  
-  background-color: navColor
   color: textColor
 
   .mode-button
+    display: block
+    margin: 10px
+    border-radius: 100%
+    vertical-align: top
+    transition: all 0.4s ease-in-out
+    height: navHeight
+    width: navHeight
     outline: none
-    background-color: navColor
     border: none
-    border-right: 1px solid textColor
-    padding: 10px
-    height: 100%
-  
+
+    &:hover
+      height: navHeight * 1.2 !important
+      width: navHeight * 1.2 !important
+
+  &:hover
+    .mode-button
+      height: navHeight * 1.1
+      width: navHeight * 1.1
+
 .navbar-component ~ *
   // TODO: ay
-  padding-top: navHeight
-  max-height: "calc(100% - %s)" % (navHeight)
-  
+  padding-left: navHeight * 1.2
+  max-width: "calc(100% - %s)" % (navHeight * 1.2)
