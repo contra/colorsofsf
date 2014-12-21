@@ -22,7 +22,7 @@ Application = fission.view
         onClick: @setMode.bind @, mode
       #, mode
 
-    txt = DOM.h1
+    txt = DOM.div
       className: 'title'
     , 'Colors of SF'
     nav = Navbar null, clickables
