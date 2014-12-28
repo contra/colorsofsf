@@ -549,7 +549,7 @@ body {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  max-width: 80%;
+  max-width: 50%;
 }
 .navbar-component .title:before,
 .navbar-component .title:after {
@@ -629,7 +629,7 @@ body {
 }
 @media screen and (max-width: 600px) {
   .title {
-    margin-bottom: 30px !important;
+    display: none !important;
   }
   .mode-button {
     *zoom: 1;
