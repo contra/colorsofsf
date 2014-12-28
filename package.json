@@ -11,6 +11,7 @@
     "brfs": "^1.2.0",
     "browserify": "^7.0.0",
     "coffeeify": "^1.0.0",
+    "ecstatic": "^0.5.8",
     "fastclick": "^1.0.3",
     "fission": "^0.0.10",
     "gulp": "^3.5.0",
@@ -54,5 +55,8 @@
       "type": "MIT",
       "url": "http://github.com/wearefractal/APPNAME/raw/master/LICENSE"
     }
-  ]
+  ],
+  "dependencies": {
+    "coffee-script": "^1.8.0"
+  }
 }

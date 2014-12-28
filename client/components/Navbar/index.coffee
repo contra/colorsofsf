@@ -3,9 +3,12 @@ DOM = fission.DOM
 
 Nav = fission.view
   render: ->
-    # TODO: flesh this out
+    logo = DOM.img
+      className: 'title'
+      src: 'img/logo.svg'
+
     return DOM.nav
       className: 'navbar-component'
-    , @props.children
+    , logo, @props.children
 
 module.exports = Nav

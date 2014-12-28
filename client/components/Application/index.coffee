@@ -3,12 +3,15 @@ DOM = fission.DOM
 Index = fission.createFactory require '../Index'
 Navbar = fission.createFactory require '../Navbar'
 
-modes = ['forest', 'royal']
+modes = [
+  'marina', 'dolores', 'lombard',
+  'haight', 'alamo', 'castro'
+]
 
 Application = fission.view
   displayName: 'Application'
   init: ->
-    mode: 'forest'
+    mode: 'marina'
 
   setMode: (mode) ->
     console.log 'setting mode to', mode
@@ -20,16 +23,13 @@ Application = fission.view
         key: mode
         className: "mode-button #{mode}-button"
         onClick: @setMode.bind @, mode
-      #, mode
+      , mode
 
-    txt = DOM.div
-      className: 'title'
-    , 'Colors of SF'
     nav = Navbar null, clickables
     house = Index mode: @state.mode
 
     return DOM.div
       className: 'application-component'
-    , txt, nav, house
+    , nav, house
 
 module.exports = Application

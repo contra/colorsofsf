@@ -1,32 +1,50 @@
 @require 'nib'
 @require 'jeet'
 
-navColor = #333
 textColor = #fff
-navHeight = 60px
+buttonSize = 60px
 
 .navbar-component
-  absolute: top left
-  padding-top: 140px
-  z-index: 1000
+  center()
   color: textColor
 
+  .title
+    col(1/1)
+    stack()
+    max-width: 50%
+
   .mode-button
-    display: block
-    margin: 10px
+    transition: opacity 0.2s ease-in-out
+    font-smoothing: antialiased
+    text-rendering: optimizeLegibility
+    font-size: 13px
+    text-align: center !important
+    text-transform: uppercase
+    vertical-align: middle !important
     border-radius: 100%
     vertical-align: top
-    transition: all 0.4s ease-in-out
-    height: navHeight
-    width: navHeight
+    height: buttonSize
+    width: buttonSize
     outline: none
     border: none
-
+    
     &:hover
-      height: navHeight * 1.1 !important
-      width: navHeight * 1.1 !important
+      opacity: 0.8
 
-.navbar-component ~ *
-  // TODO: ay
-  padding-left: navHeight * 1.2
-  max-width: "calc(100% - %s)" % (navHeight * 1.2)
+@media screen and (min-width: 600px)
+  .title
+    margin-bottom: buttonSize !important
+
+  .mode-button
+    col(1/1)
+    stack()
+    margin-bottom: 5px
+    
+@media screen and (max-width: 600px)
+  .title
+    display: none !important
+
+  .mode-button
+    span(1/6)
+    margin-left: 5px
+    margin-top: 5px
